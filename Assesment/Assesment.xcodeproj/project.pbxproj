@@ -14,6 +14,10 @@
 		07CF32E82E12553C00E131A5 /* Assesment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07CF32E62E12553C00E131A5 /* Assesment.xcdatamodeld */; };
 		07CF32EA2E12553E00E131A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CF32E92E12553E00E131A5 /* Assets.xcassets */; };
 		07CF32ED2E12553E00E131A5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 07CF32EC2E12553E00E131A5 /* Base */; };
+		07CF32F62E1257E200E131A5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07CF32F52E1257E200E131A5 /* Alamofire */; };
+		07CF32F82E1257E200E131A5 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 07CF32F72E1257E200E131A5 /* AlamofireDynamic */; };
+		07CF32FC2E12586600E131A5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 07CF32FB2E12586600E131A5 /* SDWebImage */; };
+		07CF32FE2E12586600E131A5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 07CF32FD2E12586600E131A5 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CF32FC2E12586600E131A5 /* SDWebImage in Frameworks */,
+				07CF32F62E1257E200E131A5 /* Alamofire in Frameworks */,
+				07CF32FE2E12586600E131A5 /* SDWebImageMapKit in Frameworks */,
+				07CF32F82E1257E200E131A5 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,12 @@
 			dependencies = (
 			);
 			name = Assesment;
+			packageProductDependencies = (
+				07CF32F52E1257E200E131A5 /* Alamofire */,
+				07CF32F72E1257E200E131A5 /* AlamofireDynamic */,
+				07CF32FB2E12586600E131A5 /* SDWebImage */,
+				07CF32FD2E12586600E131A5 /* SDWebImageMapKit */,
+			);
 			productName = Assesment;
 			productReference = 07CF32DA2E12553C00E131A5 /* Assesment.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,11 @@
 				Base,
 			);
 			mainGroup = 07CF32D12E12553C00E131A5;
+			packageReferences = (
+				07CF32F42E1257E200E131A5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				07CF32F92E12583E00E131A5 /* XCRemoteSwiftPackageReference "Moya" */,
+				07CF32FA2E12586600E131A5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 07CF32DB2E12553C00E131A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +386,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07CF32F42E1257E200E131A5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		07CF32F92E12583E00E131A5 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		07CF32FA2E12586600E131A5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07CF32F52E1257E200E131A5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07CF32F42E1257E200E131A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		07CF32F72E1257E200E131A5 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07CF32F42E1257E200E131A5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		07CF32FB2E12586600E131A5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07CF32FA2E12586600E131A5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		07CF32FD2E12586600E131A5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07CF32FA2E12586600E131A5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		07CF32E62E12553C00E131A5 /* Assesment.xcdatamodeld */ = {
